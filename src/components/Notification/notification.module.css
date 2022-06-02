@@ -1,0 +1,10 @@
+.feedback__text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  text-transform: none;
+}
+.feedback__title {
+  font-weight: bold;
+}
