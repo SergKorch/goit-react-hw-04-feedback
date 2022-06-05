@@ -38,12 +38,11 @@ const App = () => {
 
   const total = countTotalFeedback();
   let percentage = countPositiveFeedbackPercentage();
-
   return (
     <div className={s.feedback}>
       <Section title="Please leave feedback">
         <FeedbackOptions
-          options={['good', 'neutral', 'bad']}
+          options={Object.keys({good, neutral, bad})}
           onLeaveFeedback={onLeaveFeedback}
         />
       </Section>
